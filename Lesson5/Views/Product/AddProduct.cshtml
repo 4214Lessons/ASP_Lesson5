@@ -1,0 +1,9 @@
+﻿@model Product
+
+<form asp-controller="Product" asp-action="AddProduct" method="post">
+    <input asp-for="@Model.Name"/> <br/>
+    <input asp-for="@Model.Description" /> <br />
+    <input asp-for="@Model.Price" /> <br />
+    <input asp-for="@Model.Count" /> <br />
+    <input type="submit" value="Add"/>
+</form>
